@@ -1,0 +1,199 @@
+"$schema" = "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json"
+final_space = true
+console_title_template = '{{ if .Root }}root @ {{ end }}{{ .Shell }} in {{ .Folder }}'
+version = 4
+
+[secondary_prompt]
+	template = '╰─❯ '
+	foreground = '#D6DEEB'
+	background = 'transparent'
+
+[transient_prompt]
+	template = ' '
+	foreground = '#FEF5ED'
+	background = 'transparent'
+
+[upgrade]
+	source = 'cdn'
+	interval = '168h'
+	auto = false
+	notice = false
+
+[[blocks]]
+	type = 'prompt'
+	alignment = 'left'
+
+	[[blocks.segments]]
+		leading_diamond = ''
+		template = ' {{ if .WSL }} on {{ end }}{{ .Icon }} '
+		foreground = '#D6DEEB'
+		background = '#575656'
+		type = 'os'
+		style = 'diamond'
+
+		[blocks.segments.options]
+			alpine = ''
+			arch = ''
+			centos = ''
+			debian = ''
+			elementary = ''
+			fedora = ''
+			gentoo = ''
+			linux = ''
+			macos = ''
+			manjaro = ''
+			mint = ''
+			opensuse = ''
+			raspbian = ''
+			ubuntu = ''
+			windows = ''
+
+	[[blocks.segments]]
+		template = '  {{ .Name }} '
+		foreground = '#011627'
+		powerline_symbol = ''
+		background = '#00C7FC'
+		type = 'shell'
+		style = 'powerline'
+
+	[[blocks.segments]]
+		template = "{{ if .SSHSession }} \ueba9 {{ end }}{{ if .Root }} \uedcf {{ else }} \uf007 {{ end }} {{ .UserName }}@{{ .HostName }} "
+		foreground = '#D6DEEB'
+		powerline_symbol = ''
+		background = '#EF541C'
+		type = 'session'
+		style = 'powerline'
+
+	[[blocks.segments]]
+		template = '   cmake {{ .Full }} '
+		foreground = '#E8EAEE'
+		powerline_symbol = ''
+		background = '#1E9748'
+		type = 'cmake'
+		style = 'powerline'
+
+	[[blocks.segments]]
+		template = '  {{ if .Venv }}{{ .Venv }} {{ end }}{{ .Full }} '
+		foreground = '#011627'
+		powerline_symbol = ''
+		background = '#FFDE57'
+		type = 'python'
+		style = 'powerline'
+
+		[blocks.segments.options]
+			display_mode = 'context'
+
+	[[blocks.segments]]
+		template = ' ‭ {{ .Full }} '
+		foreground = '#ffffff'
+		powerline_symbol = ''
+		background = '#7FD5EA'
+		type = 'go'
+		style = 'powerline'
+
+	[[blocks.segments]]
+		template = '  {{ .Full }} '
+		foreground = '#193549'
+		powerline_symbol = ''
+		background = '#99908A'
+		type = 'rust'
+		style = 'powerline'
+
+	[[blocks.segments]]
+		template = ' {{ .UpstreamIcon }}{{ .HEAD }}{{if .BranchStatus }} {{ .BranchStatus }}{{ end }}{{ if .Working.Changed }}  {{ .Working.String }}{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} |{{ end }}{{ if .Staging.Changed }}<#CAEBE1>  {{ .Staging.String }}</>{{ end }}{{ if gt .StashCount 0 }}  {{ .StashCount }}{{ end }} '
+		foreground = '#011627'
+		powerline_symbol = ''
+		background = '#1BD4CD'
+		type = 'git'
+		style = 'powerline'
+		background_templates = ['{{ if or (.Working.Changed) (.Staging.Changed) }}#16B1AC{{ end }}', '{{ if and (gt .Ahead 0) (gt .Behind 0) }}#16B1AC{{ end }}', '{{ if gt .Ahead 0 }}#B787D7{{ end }}', '{{ if gt .Behind 0 }}#B787D7{{ end }}']
+
+		[blocks.segments.options]
+			branch_icon = ' '
+			fetch_status = true
+			fetch_upstream_icon = true
+
+[[blocks]]
+	type = 'prompt'
+	alignment = 'right'
+
+	[[blocks.segments]]
+		leading_diamond = ''
+		template = ' {{ if gt .Code 0 }}{{ else }}{{ end }} '
+		foreground = '#414141'
+		background = '#03DED3'
+		type = 'status'
+		style = 'diamond'
+		background_templates = ['{{ if gt .Code 0 }}#E44141{{ end }}']
+		foreground_templates = ['{{ if gt .Code 0 }}#D6DEEB{{ end }}']
+
+		[blocks.segments.options]
+			always_enabled = true
+
+	[[blocks.segments]]
+		trailing_diamond = ''
+		template = '  {{ .FormattedMs }} '
+		foreground = '#D6DEEB'
+		background = '#575656'
+		type = 'executiontime'
+		style = 'diamond'
+
+		[blocks.segments.options]
+			style = 'roundrock'
+			threshold = 0.0
+
+[[blocks]]
+	type = 'prompt'
+	alignment = 'left'
+	newline = true
+
+	[[blocks.segments]]
+		template = '╭─'
+		foreground = '#D6DEEB'
+		type = 'text'
+		style = 'plain'
+
+	[[blocks.segments]]
+		template = '{{ .CurrentDate | date .Format }} <#79DFE1>|</>'
+		foreground = '#F2D3B6'
+		type = 'time'
+		style = 'plain'
+
+		[blocks.segments.options]
+			time_format = '<#D6DEEB> 15:04:05</> <#79DFE1>|</>  2006-01-02'
+
+	[[blocks.segments]]
+		leading_diamond = "<#00C7FC> \uf07b </><#B6D6F2> in </>"
+		template = ' {{ .Path }} '
+		foreground = '#B6D6F2'
+		type = 'path'
+		style = 'diamond'
+
+		[blocks.segments.options]
+			folder_icon = '  '
+			folder_separator_icon = '  '
+			home_icon = ' '
+			style = 'full'
+
+		[blocks.segments.options.mapped_locations]
+		"P:" = '󰦬 '
+
+[[blocks]]
+	type = 'prompt'
+	alignment = 'left'
+	newline = true
+
+	[[blocks.segments]]
+		template = '╰─'
+		foreground = '#D6DEEB'
+		type = 'text'
+		style = 'plain'
+
+	[[blocks.segments]]
+		template = '❯ '
+		foreground = '#D6DEEB'
+		type = 'status'
+		style = 'plain'
+
+		[blocks.segments.options]
+			always_enabled = true
