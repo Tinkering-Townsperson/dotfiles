@@ -1,0 +1,130 @@
+# -*- coding: utf-8 -*-
+"""~/.pythonrc startup file
+"""
+
+
+###########
+# IMPORTS #
+###########
+
+import os
+import platform
+import sys
+import atexit
+from importlib import reload  # noqa
+from pathlib import Path
+
+
+#############
+# CONSTANTS #
+#############
+
+VIRTUAL_ENV = os.environ.get("VIRTUAL_ENV")
+HOME = Path(VIRTUAL_ENV).parent if VIRTUAL_ENV else None
+USERNAME = os.environ.get("USERNAME")
+HOSTNAME = os.environ.get("USERDOMAIN", platform.node())
+
+
+##################
+# COLOUR SUPPORT #
+##################
+
+# Copied from https://gist.github.com/taavi223/1340876
+
+class TermColours(dict):
+	"""Gives easy access to ANSI color codes. Attempts to fall back to no color
+	for certain TERM values. (Mostly stolen from IPython.)"""
+
+	COLOUR_TEMPLATES = (
+		("Black", "0;30"),
+		("Red", "0;31"),
+		("Green", "0;32"),
+		("Brown", "0;33"),
+		("Blue", "0;34"),
+		("Purple", "0;35"),
+		("Cyan", "0;36"),
+		("LightGray", "0;37"),
+		("DarkGray", "1;30"),
+		("LightRed", "1;31"),
+		("LightGreen", "1;32"),
+		("Yellow", "1;33"),
+		("LightBlue", "1;34"),
+		("LightPurple", "1;35"),
+		("LightCyan", "1;36"),
+		("White", "1;37"),
+		("Normal", "0"),
+	)
+
+	NoColour = ''
+	_base = '\001\033[%sm\002'
+
+	def __init__(self):  # noqa
+		if os.environ.get('TERM') in ('xterm-color', 'xterm-256color', 'linux', 'screen', 'screen-256color', 'screen-bce') or \
+			os.environ.get("WT_SESSION") is not None:
+			self.update(dict([(k, self._base % v) for k, v in self.COLOUR_TEMPLATES]))
+		else:
+			self.update(dict([(k, self.NoColour) for k, v in self.COLOUR_TEMPLATES]))
+
+_c = TermColours()  # noqa
+
+
+#####################
+# UTILITY FUNCTIONS #
+#####################
+
+class CallOnRepr:
+	"""A helper class that calls a function when its repr is called."""
+	def __init__(self, func):
+		self.func = func
+
+	def __repr__(self):
+		self.func()
+		return ""
+
+
+@CallOnRepr
+def clear():
+	sys.stderr.write("\033[H\033[J")
+	sys.stderr.flush()
+
+
+##########
+# PROMPT #
+##########
+
+class Prompt:
+	def __init__(self, prompt="", **_kwargs):
+		self.prompt = prompt
+
+	def __str__(self):
+		return f"\
+{_c['LightBlue']}{platform.python_implementation()} {'.'.join(platform.python_version_tuple()[:2])}{_c['Normal']} (\
+{_c['LightBlue']}{os.path.basename(HOME) if HOME else 'System'}{_c['Normal']}) $ "
+
+
+sys.ps1 = Prompt()
+
+#######################
+# WELCOME & EXIT TEXT #
+#######################
+
+
+_WELCOME = """\
+%(Cyan)sWELCOME,   P R O G R A M M E R%(Normal)s
+
+Features of this console:
+	* TUFF prompt
+	* Colour support
+	* clear command to clear your screen!
+	* %(LightGreen)sAND MUCH MUCH MORE COMING SOON%(Normal)s
+
+""" % _c
+
+_EXIT = f"""
+Aw shucks you're leaving...
+
+See you later, %(LightGreen)s{USERNAME}%(Normal)s!
+""" % _c
+
+sys.stdout.write(_WELCOME)
+atexit.register(lambda: sys.stdout.write(_EXIT))
