@@ -1,0 +1,12 @@
+[distutils]
+index-servers =
+	pypi
+	testpypi
+
+[testpypi]
+username = __token__
+password = {{ onepasswordRead  "op://employee/TestPyPI/apikey" }}
+
+[pypi]
+username = __token__
+password = {{ onepasswordRead  "op://employee/PyPI/apikey" }}
