@@ -1,4 +1,10 @@
-oh-my-posh.exe init pwsh --config "~/.config.omp.toml" | Invoke-Expression
+if ($Env:TERM -eq "linux") {
+    $THEME = "onehalf.minimal"
+} else {
+    $THEME = "~/.config.omp.toml"
+}
+
+oh-my-posh init pwsh -c $THEME | Invoke-Expression
 
 
 Import-Module ZLocation
@@ -33,12 +39,6 @@ Set-PSReadLineKeyHandler -Chord '"',"'" `
         [Microsoft.PowerShell.PSConsoleReadLine]::SetCursorPosition($cursor - 1)
     }
 }
-
-
-#f45873b3-b655-43a6-b217-97c00aa0db58 PowerToys CommandNotFound module
-
-Import-Module -Name Microsoft.WinGet.CommandNotFound
-#f45873b3-b655-43a6-b217-97c00aa0db58
 
 
 $Env:PYTHONSTARTUP = "$HOME/.pythonrc"
