@@ -7,13 +7,13 @@
 # IMPORTS #
 ###########
 
+import atexit
+import getpass
 import os
 import platform
 import sys
-import atexit
 from importlib import reload  # noqa
 from pathlib import Path
-
 
 #############
 # CONSTANTS #
@@ -21,7 +21,7 @@ from pathlib import Path
 
 VIRTUAL_ENV = os.environ.get("VIRTUAL_ENV")
 HOME = Path(VIRTUAL_ENV).parent if VIRTUAL_ENV else None
-USERNAME = os.environ.get("USERNAME")
+USERNAME = getpass.getuser()
 HOSTNAME = os.environ.get("USERDOMAIN", platform.node())
 
 
