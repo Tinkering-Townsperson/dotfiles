@@ -1,0 +1,25 @@
+#
+# ~/.bashrc
+#
+
+# If not running interactively, don't do anything
+[[ $- != *i* ]] && return
+
+alias ls='ls --color=auto'
+alias grep='grep --color=auto'
+PS1='[\u@\h \W]\$ '
+
+
+# Created by `pipx` on 2025-12-29 00:08:12
+export PATH="$PATH:/home/pm/.local/bin"
+
+if [ "$TERM_PROGRAM" == "linux" ]; then
+	setfont -d
+	THEME="onehalf.minimal"
+else
+	THEME="~/.config.omp.toml"
+fi
+
+eval "$(oh-my-posh init bash -c $THEME)"
+
+fastfetch
