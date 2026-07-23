@@ -23,7 +23,7 @@ powershell -NoProfile -ExecutionPolicy Bypass -Command "irm https://raw.githubus
 ### Linux
 
 ```shell
-bash -c "$(curl -fsSL https://raw.githubusercontent.com/Tinkering-Townsperson/dotfiles/refs/heads/main/paya_dotfile_helper_ARCH.sh)"
+curl -fsSL https://raw.githubusercontent.com/Tinkering-Townsperson/dotfiles/refs/heads/main/paya_dotfile_helper_ARCH.sh | bash
 ```
 
 
