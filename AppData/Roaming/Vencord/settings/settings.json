@@ -9,7 +9,7 @@
     "frameless": false,
     "transparent": false,
     "winCtrlQ": false,
-    "disableMinSize": false,
+    "disableMinSize": true,
     "winNativeTitleBar": false,
     "plugins": {
         "ChatInputButtonAPI": {
@@ -178,7 +178,7 @@
             "enabled": false
         },
         "Experiments": {
-            "enabled": false,
+            "enabled": true,
             "toolbarDevMenu": false
         },
         "ExpressionCloner": {
@@ -471,7 +471,9 @@
                             "1480396386582401197",
                             "1486058646872916090",
                             "1486912667389267973",
-                            "1514639300430663821"
+                            "1514639300430663821",
+                            "1407840030113792100",
+                            "1505078225829625927"
                         ]
                     },
                     {
@@ -751,7 +753,7 @@
         "authenticated": false,
         "url": "https://api.vencord.dev/",
         "settingsSync": false,
-        "settingsSyncVersion": 1782892620746
+        "settingsSyncVersion": 1783991071069
     },
     "windowsMaterial": "none"
 }
