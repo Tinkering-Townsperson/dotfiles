@@ -17,13 +17,13 @@ Run the following in your terminal
 ### Windows (Powershell)
 
 ```powershell
-powershell -NoProfile -ExecutionPolicy Bypass -Command "irm https://github.com/Tinkering-Townsperson/dotfiles/blob/main/paya_dotfile_helper_WINDOWS.ps1 | iex"
+powershell -NoProfile -ExecutionPolicy Bypass -Command "irm https://raw.githubusercontent.com/Tinkering-Townsperson/dotfiles/refs/heads/main/paya_dotfile_helper_WINDOWS.ps1 | iex"
 ```
 
 ### Linux
 
 ```shell
-bash -c "$(curl -fsSL https://github.com/Tinkering-Townsperson/dotfiles/blob/main/paya_dotfile_helper_ARCH.sh)"
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/Tinkering-Townsperson/dotfiles/refs/heads/main/paya_dotfile_helper_ARCH.sh)"
 ```
 
 

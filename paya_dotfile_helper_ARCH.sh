@@ -37,8 +37,10 @@ read -n 1 -s -r -p "Press any key to continue..."
 op signin
 
 echo  "Initializing dotfiles from https://github.com/Tinkering-Townsperson/dotfiles.git ..."
-chezmoi init https://github.com/$GITHUB_USERNAME/dotfiles.git
+chezmoi init https://github.com/Tinkering-Townsperson/dotfiles.git
 echo "Done!\n\n"
+
+chezmoi status
 
 read -p "Show diff for incoming changes? (y/n): " showDiff
 

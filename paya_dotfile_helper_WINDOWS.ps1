@@ -31,11 +31,13 @@ Pause
 op signin
 
 Write-Host "Initializing dotfiles from https://github.com/Tinkering-Townsperson/dotfiles.git ..." -ForegroundColor DarkBlue
-#chezmoi init https://github.com/$GITHUB_USERNAME/dotfiles.git
+chezmoi init https://github.com/Tinkering-Townsperson/dotfiles.git
 Write-Host "Done!" -ForegroundColor White -BackgroundColor Green
 Write-Host "`n" -BackgroundColor Black
 
 $showDiff = $Host.UI.PromptForChoice("Show a diff of incoming file changes?", "Choose an option:", @("&1. Yes", "&2. No"), 0)
+
+chezmoi status
 
 if ($showDiff -eq 0) {
     chezmoi diff
