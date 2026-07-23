@@ -1,0 +1,132 @@
+<svg height="452" width="1379.2" xmlns="http://www.w3.org/2000/svg">
+<g transform="translate(32,16)">
+<filter filterUnits="userSpaceOnUse" height="460" id="shadow" width="1387.2" x="-32" y="-24">
+<feGaussianBlur stdDeviation="12"/>
+</filter>
+<rect fill="#000000c0" filter="url(#shadow)" height="388" rx="10" ry="10" width="1315.2" x="4" y="12"/>
+<rect fill="#282c34" height="388" rx="10" ry="10" width="1315.2"/>
+<clipPath id="header">
+<rect height="28" width="1315.2"/>
+</clipPath>
+<rect clip-path="url(#header)" fill="#383837" height="56" rx="10" ry="10" width="1315.2"/>
+<line stroke="#000000c0" stroke-width="0.5" x1="0" x2="1315.2" y1="28" y2="28"/><text dominant-baseline="central" fill="#b3b3b3" font-family="system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" x="657.6" y="14">pwsh</text>
+<g>
+<circle cx="14" cy="14" fill="#ff5f56" r="6" stroke="#ff5f56" stroke-width="0.5"/>
+<circle cx="34" cy="14" fill="#ffbd2e" r="6" stroke="#ffbd2e" stroke-width="0.5"/>
+<circle cx="54" cy="14" fill="#28c941" r="6" stroke="#28c941" stroke-width="0.5"/>
+</g>
+<svg class="terminal" font-family="JetBrains Mono, Fira Code, Source Code Pro, Cascadia Code, Consolas, Menlo, Monaco, DejaVu Sans Mono, monospace, Symbols Nerd Font Mono, Cascadia Mono" font-size="12" height="360" width="1315.2" y="28">
+<svg fill="#dcdfe4" x="9.6" y="7.2">
+<g>
+<svg height="345.6" viewBox="0 0 108 28.8" width="1296">
+<g stroke-width="0.025">
+<path d="M0.6,2.4 H2.4 V3.6 H0.6 Z" fill="#575656" stroke="#575656"/>
+<path d="M2.4,2.4 H7.8 V3.6 H2.4 Z" fill="#00c7fc" stroke="#00c7fc"/>
+<path d="M7.8,2.4 H21.6 V3.6 H7.8 Z" fill="#ef541c" stroke="#ef541c"/>
+<path d="M21.6,2.4 H37.8 V3.6 H21.6 Z" fill="#16b1ac" stroke="#16b1ac"/>
+<path d="M101.4,2.4 H103.2 V3.6 H101.4 Z" fill="#03ded3" stroke="#03ded3"/>
+<path d="M103.2,2.4 H107.4 V3.6 H103.2 Z" fill="#575656" stroke="#575656"/>
+</g>
+</svg>
+<svg height="14.4" overflow="hidden" width="1296" y="0">
+<text xml:space="preserve" y="0.96em"><tspan fill="#dcdfe4">PowerShell </tspan><tspan fill="#dcdfe4">7.6.3 </tspan></text>
+</svg>
+<svg height="14.4" overflow="hidden" width="1296" y="14.4">
+<text xml:space="preserve" y="0.96em"><tspan fill="#dcdfe4">Loading </tspan><tspan fill="#dcdfe4">personal </tspan><tspan fill="#dcdfe4">and </tspan><tspan fill="#dcdfe4">system </tspan><tspan fill="#dcdfe4">profiles </tspan><tspan fill="#dcdfe4">took </tspan><tspan fill="#dcdfe4">1095ms. </tspan></text>
+</svg>
+<svg height="14.4" overflow="hidden" width="1296" y="28.8">
+<text xml:space="preserve" y="0.96em"><tspan fill="#575656"></tspan><tspan> </tspan></text>
+<text textLength="0.6em" x="1.2em" xml:space="preserve" y="0.96em"><tspan fill="#d6deeb"></tspan></text>
+<text xml:space="preserve" y="0.96em"><tspan>    </tspan><tspan fill="#575656"> </tspan></text>
+<text textLength="0.6em" x="3.6em" xml:space="preserve" y="0.96em"><tspan fill="#011627"></tspan></text>
+<text xml:space="preserve" y="0.96em"><tspan>        </tspan><tspan fill="#011627">pwsh </tspan><tspan fill="#00c7fc"> </tspan></text>
+<text textLength="0.6em" x="9em" xml:space="preserve" y="0.96em"><tspan fill="#d6deeb"></tspan></text>
+<text xml:space="preserve" y="0.96em"><tspan>                  </tspan><tspan fill="#d6deeb">after@Paya-Laptop </tspan><tspan fill="#ef541c"> </tspan></text>
+<text textLength="0.6em" x="22.8em" xml:space="preserve" y="0.96em"><tspan fill="#011627"></tspan></text>
+<text xml:space="preserve" y="0.96em"><tspan>                                       </tspan></text>
+<text textLength="0.6em" x="23.4em" xml:space="preserve" y="0.96em"><tspan fill="#011627"></tspan></text>
+<text xml:space="preserve" y="0.96em"><tspan>                                         </tspan><tspan fill="#011627">main </tspan><tspan fill="#011627">≡ </tspan></text>
+<text textLength="0.6em" x="28.8em" xml:space="preserve" y="0.96em"><tspan fill="#011627"></tspan></text>
+<text xml:space="preserve" y="0.96em"><tspan>                                                  </tspan><tspan fill="#011627">?4 </tspan><tspan fill="#011627">~2 </tspan><tspan fill="#011627">| </tspan></text>
+<text textLength="0.6em" x="34.8em" xml:space="preserve" y="0.96em"><tspan fill="#caebe1"></tspan></text>
+<text xml:space="preserve" y="0.96em"><tspan>                                                            </tspan><tspan fill="#caebe1">+2 </tspan><tspan fill="#16b1ac"></tspan><tspan>                                                                                                        </tspan></text>
+<text textLength="0.6em" x="100.8em" xml:space="preserve" y="0.96em"><tspan fill="#03ded3"></tspan></text>
+<text xml:space="preserve" y="0.96em"><tspan>                                                                                                                                                                          </tspan></text>
+<text textLength="0.6em" x="102em" xml:space="preserve" y="0.96em"><tspan fill="#414141"></tspan></text>
+<text xml:space="preserve" y="0.96em"><tspan>                                                                                                                                                                             </tspan></text>
+<text textLength="0.6em" x="103.8em" xml:space="preserve" y="0.96em"><tspan fill="#d6deeb"></tspan></text>
+<text xml:space="preserve" y="0.96em"><tspan>                                                                                                                                                                               </tspan><tspan fill="#d6deeb">0ms </tspan></text>
+<text textLength="0.6em" x="107.4em" xml:space="preserve" y="0.96em"><tspan fill="#575656"></tspan></text>
+<text xml:space="preserve" y="0.96em"></text>
+</svg>
+<svg height="14.4" overflow="hidden" width="1296" y="43.2">
+<text xml:space="preserve" y="0.96em"><tspan fill="#d6deeb">╭─</tspan></text>
+<text textLength="0.6em" x="1.2em" xml:space="preserve" y="0.96em"><tspan fill="#d6deeb"></tspan></text>
+<text xml:space="preserve" y="0.96em"><tspan>    </tspan><tspan fill="#d6deeb">15:19:46 </tspan><tspan fill="#79dfe7">| </tspan></text>
+<text textLength="0.6em" x="9em" xml:space="preserve" y="0.96em"><tspan fill="#f2d3b6"></tspan></text>
+<text xml:space="preserve" y="0.96em"><tspan>                 </tspan><tspan fill="#f2d3b6">2026-07-21 </tspan><tspan fill="#79dfe1">| </tspan></text>
+<text textLength="0.6em" x="18em" xml:space="preserve" y="0.96em"><tspan fill="#00c7fc"></tspan></text>
+<text xml:space="preserve" y="0.96em"><tspan>                                 </tspan><tspan fill="#b6d6f2">in </tspan><tspan> </tspan></text>
+<text textLength="0.6em" x="22.2em" xml:space="preserve" y="0.96em"><tspan fill="#b6d6f2"></tspan></text>
+<text xml:space="preserve" y="0.96em"><tspan>                                        </tspan></text>
+<text textLength="0.6em" x="24em" xml:space="preserve" y="0.96em"><tspan fill="#b6d6f2"></tspan></text>
+<text xml:space="preserve" y="0.96em"><tspan>                                          </tspan><tspan fill="#b6d6f2">.local </tspan></text>
+<text textLength="0.6em" x="29.4em" xml:space="preserve" y="0.96em"><tspan fill="#b6d6f2"></tspan></text>
+<text xml:space="preserve" y="0.96em"><tspan>                                                   </tspan><tspan fill="#b6d6f2">share </tspan></text>
+<text textLength="0.6em" x="34.2em" xml:space="preserve" y="0.96em"><tspan fill="#b6d6f2"></tspan></text>
+<text xml:space="preserve" y="0.96em"><tspan>                                                           </tspan><tspan fill="#b6d6f2">chezmoi</tspan></text>
+</svg>
+<svg height="14.4" overflow="hidden" width="1296" y="57.6">
+<text xml:space="preserve" y="0.96em"><tspan fill="#d6deeb">╰─❯</tspan></text>
+</svg>
+</g>
+</svg>
+</svg>
+<rect fill="none" height="388" rx="10" ry="10" stroke="#000000" stroke-width="0.5" width="1315.2"/>
+<rect fill="none" height="386" rx="9" ry="9" stroke="#f0f0f080" stroke-width="0.5" width="1313.2" x="1" y="1"/>
+</g>
+<style>
+@font-face {
+	font-family: Symbols Nerd Font Mono;
+	font-weight: normal;
+	font-style: normal;
+	src: url(https://raw.githubusercontent.com/pamburus/fonts/refs/heads/main/SymbolsNerdFontMono/nf-s10.woff2) format('woff2');
+}
+@font-face {
+	font-family: Symbols Nerd Font Mono;
+	font-weight: normal;
+	font-style: normal;
+	src: url(https://raw.githubusercontent.com/pamburus/fonts/refs/heads/main/SymbolsNerdFontMono/nf-s08.woff2) format('woff2');
+}
+@font-face {
+	font-family: Symbols Nerd Font Mono;
+	font-weight: normal;
+	font-style: normal;
+	src: url(https://raw.githubusercontent.com/pamburus/fonts/refs/heads/main/SymbolsNerdFontMono/nf-s06.woff2) format('woff2');
+}
+@font-face {
+	font-family: Symbols Nerd Font Mono;
+	font-weight: normal;
+	font-style: normal;
+	src: url(https://raw.githubusercontent.com/pamburus/fonts/refs/heads/main/SymbolsNerdFontMono/nf-s05.woff2) format('woff2');
+}
+@font-face {
+	font-family: Symbols Nerd Font Mono;
+	font-weight: normal;
+	font-style: normal;
+	src: url(https://raw.githubusercontent.com/pamburus/fonts/refs/heads/main/SymbolsNerdFontMono/nf-s04.woff2) format('woff2');
+}
+@font-face {
+	font-family: Symbols Nerd Font Mono;
+	font-weight: normal;
+	font-style: normal;
+	src: url(https://raw.githubusercontent.com/pamburus/fonts/refs/heads/main/SymbolsNerdFontMono/nf-s01.woff2) format('woff2');
+}
+@font-face {
+	font-family: JetBrains Mono;
+	font-weight: 100 800;
+	font-style: normal;
+	src: url(https://raw.githubusercontent.com/pamburus/fonts/refs/heads/main/JetBrainsMono/fonts/variable/JetBrainsMono%5Bwght%5D.woff2) format('woff2');
+}
+</style>
+</svg>

@@ -1,0 +1,94 @@
+Clear-Host
+
+Write-Host "Welcome!"
+
+Write-Host "This script will allow you to set up your apps in a jiffy!"
+
+$Platform = ""
+
+$packageIDsWindows = @(
+    "Fastfetch-cli.Fastfetch"
+    "Figma.Figma"
+    "Git.Git"
+    "Github.GithubDesktop"
+    "JetBrains.Toolbox"
+    "KiCad.KiCad"
+    "Muse.MuseHub"
+    "Musescore.Musescore"
+    "OpenJS.NodeJS"
+    "JanDeDobbeleer.OhMyPosh"
+    "AgileBits.1Password"
+    "Microsoft.Powertoys"
+    "Prusa3D.PrusaSlicer"
+    "Python.Python.3.14"
+    "Python.Launcher"
+    "SlackTechnologies.Slack"
+    "Valve.Steam"
+    "Vesktop.Vesktop"
+    "Vivaldi.Vivaldi"
+    "RealVNC.VNCServer"
+    "Microsoft.VisualStudioCode"
+)
+
+$packageIDsArch = @(
+    "fastfetch"
+    "figma-linux-bin"
+    "ghostty"
+    "git"
+    "github-desktop-bin"
+    "jetbrains-toolbox"
+    "kicad-git"
+    "muse-sounds-manager-bin"
+    "musescore-bin"
+    "niri"
+    "noctalia-git"
+    "nodejs"
+    "oh-my-posh-bin"
+    "1password"
+    "prusaslicer-git"
+    "python"
+    "python-launcher"
+    "slack-desktop-wayland"
+    "vesktop-bin"
+    "vivaldi"
+    "realvnc-vnc-server"
+    "visual-studio-code-bin"
+)
+
+{{ if eq .chezmoi.os "windows" }}
+$Platform = "nt"
+$packageIDs = $packageIDsWindows | Out-GridView -OutputMode Multiple -Title "Select which packages you'd like to install:"
+{{ else if eq .chezmoi.os "linux" }}
+
+$osRelease = ConvertFrom-StringData (Get-Content /etc/os-release -ErrorAction SilentlyContinue | Out-String)
+
+# Check if the ID matches 'arch' or if it is derived from Arch
+if ($osRelease.ID -eq 'arch' -or $osRelease.ID_LIKE -like '*arch*') {
+    $Platform = "arch"
+} else {
+    Write-Host "Arch is the only distro supported at the moment. bye!"
+    exit
+}
+
+$packageIDs = $packageIDsArch
+
+{{ end }}
+
+function Install-Application-Package {
+    param (
+        [String]$packageID
+    )
+
+    if ($Platform -eq "nt") {
+        Invoke-Expression "winget install -s winget --id $packageID"
+    } elseif ($Platform -eq "arch") {
+        Invoke-Expression "yay -Sy $packageID"
+    }
+}
+
+foreach ($package in $packageIDs)
+{
+    if ($package -ne "") {
+        Install-Application-Package -packageID $package
+    }
+}

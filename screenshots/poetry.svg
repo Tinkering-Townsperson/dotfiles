@@ -1,0 +1,107 @@
+<svg height="452" width="832" xmlns="http://www.w3.org/2000/svg">
+<g transform="translate(32,16)">
+<filter filterUnits="userSpaceOnUse" height="460" id="shadow" width="840" x="-32" y="-24">
+<feGaussianBlur stdDeviation="12"/>
+</filter>
+<rect fill="#000000c0" filter="url(#shadow)" height="388" rx="10" ry="10" width="768" x="4" y="12"/>
+<rect fill="#282c34" height="388" rx="10" ry="10" width="768"/>
+<clipPath id="header">
+<rect height="28" width="768"/>
+</clipPath>
+<rect clip-path="url(#header)" fill="#383837" height="56" rx="10" ry="10" width="768"/>
+<line stroke="#000000c0" stroke-width="0.5" x1="0" x2="768" y1="28" y2="28"/><text dominant-baseline="central" fill="#b3b3b3" font-family="system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" x="384" y="14">poetry config --list</text>
+<g>
+<circle cx="14" cy="14" fill="#ff5f56" r="6" stroke="#ff5f56" stroke-width="0.5"/>
+<circle cx="34" cy="14" fill="#ffbd2e" r="6" stroke="#ffbd2e" stroke-width="0.5"/>
+<circle cx="54" cy="14" fill="#28c941" r="6" stroke="#28c941" stroke-width="0.5"/>
+</g>
+<svg class="terminal" font-family="JetBrains Mono, Fira Code, Source Code Pro, Cascadia Code, Consolas, Menlo, Monaco, DejaVu Sans Mono, monospace, Symbols Nerd Font Mono, Cascadia Mono" font-size="12" height="360" width="768" y="28">
+<svg fill="#dcdfe4" x="9.6" y="7.2">
+<g>
+<svg height="345.6" viewBox="0 0 62.4 28.8" width="748.8">
+<g stroke-width="0.025"/>
+</svg>
+<svg height="14.4" overflow="hidden" width="748.8" y="0">
+<text xml:space="preserve" y="0.96em"><tspan fill="#56b6c2">cache-dir </tspan><tspan fill="#dcdfe4">= </tspan><tspan fill="#dcdfe4" font-weight="bold">"C:\\Users\\after\\AppData\\Local\\pypoetry\\Cache"</tspan></text>
+</svg>
+<svg height="14.4" overflow="hidden" width="748.8" y="14.4">
+<text xml:space="preserve" y="0.96em"><tspan fill="#56b6c2">data-dir </tspan><tspan fill="#dcdfe4">= </tspan><tspan fill="#dcdfe4" font-weight="bold">"C:\\Users\\after\\AppData\\Roaming\\pypoetry"</tspan></text>
+</svg>
+<svg height="14.4" overflow="hidden" width="748.8" y="28.8">
+<text xml:space="preserve" y="0.96em"><tspan fill="#56b6c2">installer.max-workers </tspan><tspan fill="#dcdfe4">= </tspan><tspan fill="#dcdfe4" font-weight="bold">null</tspan></text>
+</svg>
+<svg height="14.4" overflow="hidden" width="748.8" y="43.2">
+<text xml:space="preserve" y="0.96em"><tspan fill="#56b6c2">installer.no-binary </tspan><tspan fill="#dcdfe4">= </tspan><tspan fill="#dcdfe4" font-weight="bold">null</tspan></text>
+</svg>
+<svg height="14.4" overflow="hidden" width="748.8" y="57.6">
+<text xml:space="preserve" y="0.96em"><tspan fill="#56b6c2">installer.only-binary </tspan><tspan fill="#dcdfe4">= </tspan><tspan fill="#dcdfe4" font-weight="bold">null</tspan></text>
+</svg>
+<svg height="14.4" overflow="hidden" width="748.8" y="72">
+<text xml:space="preserve" y="0.96em"><tspan fill="#56b6c2">installer.parallel </tspan><tspan fill="#dcdfe4">= </tspan><tspan fill="#dcdfe4" font-weight="bold">true</tspan></text>
+</svg>
+<svg height="14.4" overflow="hidden" width="748.8" y="86.4">
+<text xml:space="preserve" y="0.96em"><tspan fill="#56b6c2">installer.re-resolve </tspan><tspan fill="#dcdfe4">= </tspan><tspan fill="#dcdfe4" font-weight="bold">false</tspan></text>
+</svg>
+<svg height="14.4" overflow="hidden" width="748.8" y="100.8">
+<text xml:space="preserve" y="0.96em"><tspan fill="#56b6c2">keyring.enabled </tspan><tspan fill="#dcdfe4">= </tspan><tspan fill="#dcdfe4" font-weight="bold">true</tspan></text>
+</svg>
+<svg height="14.4" overflow="hidden" width="748.8" y="115.2">
+<text xml:space="preserve" y="0.96em"><tspan fill="#56b6c2">python.installation-dir </tspan><tspan fill="#dcdfe4">= </tspan><tspan fill="#dcdfe4" font-weight="bold">"{data-dir}\\python"</tspan><tspan>  </tspan><tspan fill="#dcdfe4"># </tspan><tspan fill="#dcdfe4">C:\Users\after\AppData\Roaming\pypoetry\python </tspan></text>
+</svg>
+<svg height="14.4" overflow="hidden" width="748.8" y="129.6">
+<text xml:space="preserve" y="0.96em"><tspan fill="#56b6c2">requests.max-retries </tspan><tspan fill="#dcdfe4">= </tspan><tspan fill="#dcdfe4" font-weight="bold">0</tspan></text>
+</svg>
+<svg height="14.4" overflow="hidden" width="748.8" y="144">
+<text xml:space="preserve" y="0.96em"><tspan fill="#56b6c2">solver.lazy-wheel </tspan><tspan fill="#dcdfe4">= </tspan><tspan fill="#dcdfe4" font-weight="bold">true</tspan></text>
+</svg>
+<svg height="14.4" overflow="hidden" width="748.8" y="158.4">
+<text xml:space="preserve" y="0.96em"><tspan fill="#56b6c2">solver.min-release-age </tspan><tspan fill="#dcdfe4">= </tspan><tspan fill="#dcdfe4" font-weight="bold">0</tspan></text>
+</svg>
+<svg height="14.4" overflow="hidden" width="748.8" y="172.8">
+<text xml:space="preserve" y="0.96em"><tspan fill="#56b6c2">solver.min-release-age-exclude </tspan><tspan fill="#dcdfe4">= </tspan><tspan fill="#dcdfe4" font-weight="bold">null</tspan></text>
+</svg>
+<svg height="14.4" overflow="hidden" width="748.8" y="187.2">
+<text xml:space="preserve" y="0.96em"><tspan fill="#56b6c2">solver.min-release-age-exclude-source </tspan><tspan fill="#dcdfe4">= </tspan><tspan fill="#dcdfe4" font-weight="bold">null</tspan></text>
+</svg>
+<svg height="14.4" overflow="hidden" width="748.8" y="201.6">
+<text xml:space="preserve" y="0.96em"><tspan fill="#56b6c2">system-git-client </tspan><tspan fill="#dcdfe4">= </tspan><tspan fill="#dcdfe4" font-weight="bold">false</tspan></text>
+</svg>
+<svg height="14.4" overflow="hidden" width="748.8" y="216">
+<text xml:space="preserve" y="0.96em"><tspan fill="#56b6c2">virtualenvs.create </tspan><tspan fill="#dcdfe4">= </tspan><tspan fill="#dcdfe4" font-weight="bold">false</tspan></text>
+</svg>
+<svg height="14.4" overflow="hidden" width="748.8" y="230.4">
+<text xml:space="preserve" y="0.96em"><tspan fill="#56b6c2">virtualenvs.in-project </tspan><tspan fill="#dcdfe4">= </tspan><tspan fill="#dcdfe4" font-weight="bold">true</tspan></text>
+</svg>
+<svg height="14.4" overflow="hidden" width="748.8" y="244.8">
+<text xml:space="preserve" y="0.96em"><tspan fill="#56b6c2">virtualenvs.options.always-copy </tspan><tspan fill="#dcdfe4">= </tspan><tspan fill="#dcdfe4" font-weight="bold">false</tspan></text>
+</svg>
+<svg height="14.4" overflow="hidden" width="748.8" y="259.2">
+<text xml:space="preserve" y="0.96em"><tspan fill="#56b6c2">virtualenvs.options.no-pip </tspan><tspan fill="#dcdfe4">= </tspan><tspan fill="#dcdfe4" font-weight="bold">false</tspan></text>
+</svg>
+<svg height="14.4" overflow="hidden" width="748.8" y="273.6">
+<text xml:space="preserve" y="0.96em"><tspan fill="#56b6c2">virtualenvs.options.system-site-packages </tspan><tspan fill="#dcdfe4">= </tspan><tspan fill="#dcdfe4" font-weight="bold">false</tspan></text>
+</svg>
+<svg height="14.4" overflow="hidden" width="748.8" y="288">
+<text xml:space="preserve" y="0.96em"><tspan fill="#56b6c2">virtualenvs.path </tspan><tspan fill="#dcdfe4">= </tspan><tspan fill="#dcdfe4" font-weight="bold">"{cache-dir}\\virtualenvs"</tspan><tspan>  </tspan><tspan fill="#dcdfe4"># </tspan><tspan fill="#dcdfe4">C:\Users\after\AppData\Local\pypoetry\Cache\virtualenvs</tspan></text>
+</svg>
+<svg height="14.4" overflow="hidden" width="748.8" y="302.4">
+<text xml:space="preserve" y="0.96em"><tspan fill="#56b6c2">virtualenvs.prompt </tspan><tspan fill="#dcdfe4">= </tspan><tspan fill="#dcdfe4" font-weight="bold">"{project_name}-py{python_version}"</tspan></text>
+</svg>
+<svg height="14.4" overflow="hidden" width="748.8" y="316.8">
+<text xml:space="preserve" y="0.96em"><tspan fill="#56b6c2">virtualenvs.use-poetry-python </tspan><tspan fill="#dcdfe4">= </tspan><tspan fill="#dcdfe4" font-weight="bold">false</tspan></text>
+</svg>
+</g>
+</svg>
+</svg>
+<rect fill="none" height="388" rx="10" ry="10" stroke="#000000" stroke-width="0.5" width="768"/>
+<rect fill="none" height="386" rx="9" ry="9" stroke="#f0f0f080" stroke-width="0.5" width="766" x="1" y="1"/>
+</g>
+<style>
+@font-face {
+	font-family: JetBrains Mono;
+	font-weight: 100 800;
+	font-style: normal;
+	src: url(https://raw.githubusercontent.com/pamburus/fonts/refs/heads/main/JetBrainsMono/fonts/variable/JetBrainsMono%5Bwght%5D.woff2) format('woff2');
+}
+</style>
+</svg>
